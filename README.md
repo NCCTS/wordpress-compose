@@ -5,6 +5,24 @@ wordpress-compose
 
 > A Docker composition for lightweight WordPress dev and small deployments.
 
+## Usage
+
+First install the latest releases of [docker-machine](https://github.com/docker/machine/tags) and [docker-compose](https://github.com/docker/fig/tags).
+
+Optionally setup a fresh Docker host:
+
+```shell
+docker-machine create -d virtualbox wpdev
+$(docker-machine env wpdev)
+docker-compose up
+```
+
+Launch the composition:
+
+```shell
+docker-compose up
+```
+
 ## Copyright and License
 
 This software is Copyright &copy; 2015 by the National Catholic Conference for Total Stewardship.<br>All rights reserved.
