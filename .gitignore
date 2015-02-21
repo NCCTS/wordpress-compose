@@ -1,0 +1,11 @@
+use*
+.DS_Store
+*~
+*.*~
+.*.sw*
+._*
+.#*
+*.swp
+
+/nginx/log
+/wordpress/wordpress
