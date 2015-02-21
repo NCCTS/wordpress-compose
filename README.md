@@ -14,7 +14,6 @@ Optionally setup a fresh Docker host:
 ```shell
 docker-machine create -d virtualbox wpdev
 $(docker-machine env wpdev)
-docker-compose up
 ```
 
 Launch the composition:
