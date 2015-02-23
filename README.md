@@ -22,6 +22,12 @@ Launch the composition:
 docker-compose up
 ```
 
+Open the new site in your browser to complete the WordPress installation:
+
+```shell
+open http://$(docker-machine ip wpdev)/
+```
+
 ## Copyright and License
 
 This software is Copyright &copy; 2015 by the National Catholic Conference for Total Stewardship.<br>All rights reserved.
