@@ -24,12 +24,12 @@ script_path () {
 script_dir=$(dirname -- "$(script_path)")
 cd $script_dir
 
-curl -s https://wordpress.org/latest.tar.gz | tar -xzf -
+curl https://wordpress.org/latest.tar.gz | tar -xzf -
 
 cp router.php wordpress/router.php
 
 cat wp-config.php.top > wordpress/wp-config.php
-echo -e "\n$(curl -s https://api.wordpress.org/secret-key/1.1/salt/)\n" \
+echo -e "\n$(curl https://api.wordpress.org/secret-key/1.1/salt/)\n" \
      >> wordpress/wp-config.php
 cat wp-config.php.bottom >> wordpress/wp-config.php
 echo >> wordpress/wp-config.php
